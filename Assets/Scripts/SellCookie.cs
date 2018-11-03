@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainButtonClick : MonoBehaviour
+public class SellCookie : MonoBehaviour
 {
     public GameObject textBox;
 
     public void ClickTheButton()
     {
-        GlobalCookies.CookieCount++;
+        GlobalCookies.CookieCount -= 1;
+        GlobalCash.CashCount += 1;
     }
 }
