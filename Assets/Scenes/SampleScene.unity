@@ -830,6 +830,7 @@ GameObject:
   - component: {fileID: 790048683}
   - component: {fileID: 790048682}
   - component: {fileID: 790048684}
+  - component: {fileID: 790048685}
   m_Layer: 0
   m_Name: MechanicsObject
   m_TagString: Untagged
@@ -876,6 +877,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CashDisplay: {fileID: 1595499424}
   InternalCash: 0
+--- !u!114 &790048685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 790048681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fd4e16050ba54447a4b0ba9e5eb0910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fakeButton: {fileID: 780444095}
+  fakeText: {fileID: 1387583450}
+  realButton: {fileID: 667916271}
+  realText: {fileID: 1021367756}
+  currentCash: 0
 --- !u!1 &809427058
 GameObject:
   m_ObjectHideFlags: 0
