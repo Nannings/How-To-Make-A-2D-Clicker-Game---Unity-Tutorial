@@ -12,5 +12,7 @@ public class PurchageLog : MonoBehaviour
         GlobalCash.CashCount -= GlobalBaker.bakerValue;
         GlobalBaker.bakerValue *= 2;
         GlobalBaker.turnOffButton = true;
+        GlobalBaker.bakePerSec += 1;
+        GlobalBaker.numberOfBakers += 1;
     }
 }

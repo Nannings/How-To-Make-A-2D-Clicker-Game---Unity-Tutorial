@@ -12,10 +12,14 @@ public class GlobalBaker : MonoBehaviour
     public int currentCash;
     public static int bakerValue = 5;
     public static bool turnOffButton = false;
+    public GameObject bakerStats;
+    public static int numberOfBakers;
+    public static int bakePerSec;
 
     private void Update()
     {
         currentCash = GlobalCash.CashCount;
+        bakerStats.GetComponent<Text>().text = "Bakers: " + numberOfBakers + " @ " + bakePerSec + "per second";
         fakeText.GetComponent<Text>().text = "Buy Baker - $" + bakerValue;
         realText.GetComponent<Text>().text = "Buy Baker - $" + bakerValue;
         if (currentCash >= bakerValue)
