@@ -968,7 +968,7 @@ MonoBehaviour:
   realButton: {fileID: 667916271}
   realText: {fileID: 1021367756}
   currentCash: 0
-  bakerStats: {fileID: 0}
+  bakerStats: {fileID: 85541600}
 --- !u!1 &809427058
 GameObject:
   m_ObjectHideFlags: 0
